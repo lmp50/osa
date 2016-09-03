@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QMenu* pmnuFile = new QMenu("&File");
 
+
     QAction* pactSave = new QAction("file save action", pmnuFile);
     pactSave->setText("&Save");
     pactSave->setShortcut(QKeySequence("CTRL+S"));
