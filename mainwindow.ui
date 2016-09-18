@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>754</width>
+    <height>483</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Main menu</string>
+   <string>main menu</string>
   </property>
   <widget class="QWidget" name="centralWidget"/>
   <widget class="QMenuBar" name="menuBar">
@@ -19,13 +19,27 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>754</width>
      <height>25</height>
     </rect>
    </property>
-   <property name="nativeMenuBar">
-    <bool>true</bool>
-   </property>
+   <widget class="QMenu" name="menuFile_1">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave_inf"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuFile_2">
+    <property name="title">
+     <string>Seek</string>
+    </property>
+    <addaction name="actionAutoload"/>
+    <addaction name="actionProcess"/>
+   </widget>
+   <addaction name="menuFile_1"/>
+   <addaction name="menuFile_2"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -36,6 +50,26 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSave_inf">
+   <property name="text">
+    <string>Save inf</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionProcess">
+   <property name="text">
+    <string>Process</string>
+   </property>
+  </action>
+  <action name="actionAutoload">
+   <property name="text">
+    <string>Autoload</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
