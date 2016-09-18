@@ -38,8 +38,16 @@
     <addaction name="actionAutoload"/>
     <addaction name="actionProcess"/>
    </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp_menu"/>
+    <addaction name="actionAbout_osa"/>
+   </widget>
    <addaction name="menuFile_1"/>
    <addaction name="menuFile_2"/>
+   <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -59,6 +67,9 @@
    <property name="text">
     <string>Quit</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
   </action>
   <action name="actionProcess">
    <property name="text">
@@ -68,6 +79,16 @@
   <action name="actionAutoload">
    <property name="text">
     <string>Autoload</string>
+   </property>
+  </action>
+  <action name="actionHelp_menu">
+   <property name="text">
+    <string>Help menu</string>
+   </property>
+  </action>
+  <action name="actionAbout_osa">
+   <property name="text">
+    <string>About osa</string>
    </property>
   </action>
  </widget>
